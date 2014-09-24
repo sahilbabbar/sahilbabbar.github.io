@@ -274,7 +274,6 @@ th {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -550,6 +549,9 @@ th {
 }
 .glyphicon-info-sign:before {
   content: "\e086";
+  font-size: 300%;
+  background-color: transparent;
+  color: white;
 }
 .glyphicon-screenshot:before {
   content: "\e087";
@@ -673,6 +675,9 @@ th {
 }
 .glyphicon-hand-down:before {
   content: "\e130";
+  font-size: 300%;
+  background-color: transparent;
+  color: white;
 }
 .glyphicon-circle-arrow-right:before {
   content: "\e131";
@@ -4547,12 +4552,15 @@ a.list-group-item.active > .badge,
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: white;
+  background-color: transparent;
+  font-family: 'Poiret One', cursive;
+  margin-top: 15%;
+  margin-left: 2%;
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
 }
 .jumbotron p {
   margin-bottom: 15px;
