@@ -528,6 +528,7 @@ th {
 }
 .glyphicon-chevron-left:before {
   content: "\e079";
+  font-size: 300%;
 }
 .glyphicon-chevron-right:before {
   content: "\e080";
@@ -547,11 +548,14 @@ th {
 .glyphicon-question-sign:before {
   content: "\e085";
 }
+.glyphicon-info-sign:hover, .glyphicon-info-sign:active {
+  color: #0CEEEE;
+}
 .glyphicon-info-sign:before {
   content: "\e086";
   font-size: 300%;
   background-color: transparent;
-  color: white;
+  color: inherit;
 }
 .glyphicon-screenshot:before {
   content: "\e087";
@@ -673,11 +677,14 @@ th {
 .glyphicon-hand-up:before {
   content: "\e129";
 }
+.glyphicon-hand-down:hover, .glyphicon-hand-down:active {
+  color: #0CEEEE;
+}
 .glyphicon-hand-down:before {
   content: "\e130";
   font-size: 300%;
   background-color: transparent;
-  color: white;
+  color: inherit;
 }
 .glyphicon-circle-arrow-right:before {
   content: "\e131";
@@ -3143,7 +3150,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: inherit;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -3168,27 +3175,28 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: inherit;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color:  #0CEEEE;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: black;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #fff;
+  /*color: #fff;*/
   text-decoration: none;
-  background-color: #428bca;
+  background-color: inherit;
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
   color: #777;
+
 }
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
