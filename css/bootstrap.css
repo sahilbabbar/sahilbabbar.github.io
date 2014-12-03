@@ -274,6 +274,7 @@ th {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -528,7 +529,6 @@ th {
 }
 .glyphicon-chevron-left:before {
   content: "\e079";
-  font-size: 300%;
 }
 .glyphicon-chevron-right:before {
   content: "\e080";
@@ -548,14 +548,8 @@ th {
 .glyphicon-question-sign:before {
   content: "\e085";
 }
-.glyphicon-info-sign:hover, .glyphicon-info-sign:active {
-  color: #0CEEEE;
-}
 .glyphicon-info-sign:before {
   content: "\e086";
-  font-size: 300%;
-  background-color: transparent;
-  color: inherit;
 }
 .glyphicon-screenshot:before {
   content: "\e087";
@@ -677,14 +671,8 @@ th {
 .glyphicon-hand-up:before {
   content: "\e129";
 }
-.glyphicon-hand-down:hover, .glyphicon-hand-down:active {
-  color: #0CEEEE;
-}
 .glyphicon-hand-down:before {
   content: "\e130";
-  font-size: 300%;
-  background-color: transparent;
-  color: inherit;
 }
 .glyphicon-circle-arrow-right:before {
   content: "\e131";
@@ -907,8 +895,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Belleza;
+  font-size: 20px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -3150,7 +3138,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  background-color: inherit;
+  background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -3175,28 +3163,27 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: inherit;
+  color: #333;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color:  #0CEEEE;
+  color: #262626;
   text-decoration: none;
-  background-color: black;
+  background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  /*color: #fff;*/
+  color: #fff;
   text-decoration: none;
-  background-color: inherit;
+  background-color: #428bca;
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
   color: #777;
-
 }
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
@@ -3894,7 +3881,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 38px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4105,11 +4092,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: transparent;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: white;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4120,12 +4107,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: white;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #333;
-  background-color: transparent;
+  background-color: #E7E7E7;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -4559,20 +4546,20 @@ a.list-group-item.active > .badge,
 }
 .jumbotron {
   padding: 30px;
+  margin-top: 10%;
   margin-bottom: 30px;
   color: white;
-  background-color: transparent;
-  font-family: 'Poiret One', cursive;
-  margin-top: 15%;
-  margin-left: 2%;
+  background: transparent;
+   
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: white;
+  color: inherit;
+  font-family: Belleza;
 }
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 30px;
   font-weight: 200;
 }
 .jumbotron > hr {
@@ -4595,7 +4582,7 @@ a.list-group-item.active > .badge,
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 90px;
   }
 }
 .thumbnail {
