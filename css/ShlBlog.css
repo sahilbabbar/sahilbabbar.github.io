@@ -1,0 +1,27 @@
+.ShlJumbotron {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ShlJumbotron h2 {
+    color: rgb(71,72,75);
+}
+.ShlJumbotron h2:hover {
+    color: black;
+}
+.ShlJumbotron p {
+    color: grey;
+}
+.ShlJumbotron p:hover {
+    color: black;
+}
+.ShlPicture {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    
