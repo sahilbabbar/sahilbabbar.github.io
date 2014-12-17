@@ -2752,7 +2752,7 @@ select[multiple].form-group-lg .form-control {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
@@ -2803,7 +2803,7 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #333;
+  color: #746767;
   background-color: #fff;
   border-color: #ccc;
 }
@@ -2814,8 +2814,8 @@ fieldset[disabled] .btn {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+/*  background-color: #e6e6e6;*/
+  border-color: #0b0b0b;
 }
 .btn-default:active,
 .btn-default.active,
@@ -5439,6 +5439,11 @@ a.list-group-item-danger.active:focus {
 .well-sm {
   padding: 9px;
   border-radius: 3px;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 18px;
+	margin-top: 2%;
+	text-align: left;
 }
 .close {
   float: right;

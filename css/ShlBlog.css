@@ -3,6 +3,7 @@
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
+    font-family: Belleza;
 }
 .ShlJumbotron h2 {
     color: rgb(71,72,75);
@@ -10,11 +11,19 @@
 .ShlJumbotron h2:hover {
     color: black;
 }
-.ShlJumbotron p {
-    color: grey;
+.ShlJumbotron a {
+	text-decoration: none;
+	color: grey;
+	font-size: 18px;
 }
-.ShlJumbotron p:hover {
+.ShlJumbotron p {
+	font-size: 18px;
+}
+.ShlJumbotron a:hover {
     color: black;
+}
+.ShlJumbotron h4 {
+	color: #746767;
 }
 .ShlPicture {
     text-align: center;
@@ -24,4 +33,12 @@
     padding-left: 0px;
     padding-right: 0px;
 }
-    
+.container {
+    font-family: Belleza;
+    font-size: 35px;
+}
+.footer {
+	font-family: Belleza;
+	text-align: center;
+	color: #746767;
+}
