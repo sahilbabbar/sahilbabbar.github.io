@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/ShlBlog.css">
         <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
     </head>
+    <body>
     <!--        Navbar begins-->
         <div class = "container">
             <div class="btn-group btn-group-justified" role="group">
@@ -21,21 +22,21 @@
                     </a>
                 </div>
                 <div class="btn-group" role="group">
-                    <a href = "profile.html">
+                    <a href = "#">
                         <button type="button" class="btn btn-default">
                             Profile
                         </button>
-                    </a>  
+                    </a>
                 </div>
                   <div class="btn-group" role="group">
-                    <a href = "blog.html">
+                    <a href = "#">
                         <button type="button" class="btn btn-default">
                             Blog
                         </button>
                       </a>
                   </div>
                   <div class="btn-group" role="group">
-                      <a href = "contact.html">
+                      <a href = "#">
                         <button type="button" class="btn btn-default">
                             Contact
                         </button>
@@ -44,20 +45,34 @@
             </div>
         </div>
 <!--        Navbar ends-->
-	<body>
 		<div class = "ShlJumbotron">
 			<h2>
 				Contact
 			</h2>
-			<p style = "margin-top: 5%;"> 
-				Email Id: sahilbabbar@live.com
+			<p style = "margin-top: 5%;">
+                <button class = "btn btn-default">
+                    <!-- Email icon by Icons8 -->
+                    <img class="icon icons8-Email" src="data:image/png;base64,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" width="30" height="30">  sahilbabbar@live.com
+                </button>
 			</p>
 			<a href = "http://github.com/sahilbabbar" class = "btn btn-default">
-				Github Profile
+                <!-- Github icon by Icons8 -->
+                <img class="icon icons8-Github" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAACppJREFUaAXVWnuQU1cZP+ck6T54aaeIYrvMLFqpgBS71iSbBHazPDrYmWpxtdTiVKU4TJ3KONY6Kq51Rjt1tFaLFdqpVVss6wOtSruwSWDz3GVbUEtLqdCygzi0Do8i+0pyjr/vJjece3N3F5bkD8/MzTnf83zfPd/5zuOGswqUzs5O14xZcxo8PN/IuJirmGpkjOOhmtFD5ShweNRRptgRjjqrXEfPnjw20N7eni+wTP6XT16UsVgq9T6ZZ3fDwDuhZ/okdb3NFH9CuOXmFr//n5PUwSblSDSR+IBS4ttw4FPoWEy2c5ucxGht51x+pzUQeNVGmxC8JEdisf6rpCv7Xbi/DppdE2ovMJwv8k25SP48Qu8xkfd8q6Wl6T8XKXPxI9Ldk/kM5+phKL7SQblUjB3DWzkEjYe44oeUzB/CnHklFAq9Rfw9PT0zMSeu48I1T3E1D8bOg8w8yMwB2WlUTynF72kLeZ9y6K8MNeGIdHX9bYq7fnArJNeUSQMBo/7qEuzLk43vXXsz7xcu+RCcX+WkH7htucH6u1asWGSOrCPbuI48n0pd6cnx5/GWP1IureKSi3uXBbyZctqlY3YnMl6h5IOYd0EH6b6sS9200u8/5UAzUGM68uf+/vr6weweByfeUpxtbAv4nh5L6eXguxPp27liD0HHTIsexfYN1nuW3tzUNGjBFwGn2GQKwVk3mP2V3Ql4vUd5+MJqOUE2kW7qg/oq2lioEBX1Q6O/JNss+CLg6Egsmb6Pc3arTaCT54aXtXm9J234ioPUB/UFxZ1W5Xx1NNn7NSuuAJV5F9mb8jPBe0AupVfFeJcrN/SxlpaWnJOSauFisZg77677C3YBK7Q+8kyqUHiJP6XhEDxaMebFUPbvQM3V0IflsOfGZcuazmo4Fo33LpJKZcPBj77CkZd12mTbiURi2qhyfRDho8Ihfx/p2b27f4aozVL7Wk3vkcE6z4f0+WIJrbrhXAeYdSeGpVSr7U6QQsXlL2D/wWgiczwaTz3Snci00J6LaJdaInuToUg8/eyIcp3BG8kgIrabc4H6Jhugc1jTO7doawlVGhHK5y6hDoLiuUBVG8MB/49LcLGxK5GY7VKuf9nxGN/9SrlXhwNNr0d6e9/lyvFrFJMN2EQ2YI5KZJEBzvgAVu0BWrU7OpQIhjPfg56yuBdCLmxpbn7J7CPak96Iaf4jE0adzUs+f/kS72uEc5sEOHE/2iUn0Hl/otv3E5Ou1668ewETDtGk2GLOcrsiiXQ9DH4PLC+KAaIWMggV6c4yjMAAXv4RgC0G0vaTz4n5QJUc6Yl6Hw6E02ugqanI6inafBvBRmhFkkkKp/Yig1Hh/d3T0YFfpyLkePumueSEk5gN1wDY0QmDz6Wm6vxkC9mk49BuL9pecERJsQFIfb48Z88KugKs6Mb+ScdVui2kKNswFm16TusLmwHDdiZogmLAb9eIjCv1Qx22t93ZoQPAZe34SsLKLfud9NltI9vJB/HO2Q0+CMwqCXH2RkvQFy3BDg2sJ/9FvKcdSJVCvRD2+8uTCbQbtsFGraNZ5IMQSrVpSGrumGhd6E4mfchAzTa5CoJqQTTRR5O9rBRt26ETyAeBxGLZ2XIpIjqTvU0pkyuxBfhJrRl2fc4wr1Eq96gzDcnPbiN8EJgQ83SBUTbyog7b26HW3o/D+YV2fOVhHtwdTy910ltmI3xApuKzNebhlaHQvzW4rCmFvKMMWSUEjFvrpLpoo7bS89mUcms15jEPLiYPTnJBs131WrHx+tJtrdXXDrLLeQEsWpxKperQdDqzFzkqXHF29TgaLbZaHVFs2jiC7Pjx46Og58fjqTDN8TRY6MO68lsd4Wz6eDvY4o2gY36vsAMFdZwdc9JbsJHP0Gkcm7chIC7ME8U2YEPowgVcDdaKGiw0ljSLXex68L9XV1LF9mEcFZ6UEqsHx+aeq7xUAlFhnHf13ccwRkSdsBgi2Butzb7NSspdkDwDEToaAOR5xUQWW4LXLPxVBNDXUfRdAyeMXTk5AWfOA2/AF7pWJ9w4IdGlWmMJqdg6bMNvgRMHRtXoDns67komn3BLcQT8lt1pSb5yjTfP13lu1U+BpJoW5EBr+ps0RKUCH7AgMuNIWUIyNtIW9K8Ph3yP2p0gnhXNzW9C5qsaf1WaSPMb7E5QR7Sdx0tusHQKHwTCL2JBMhYmr204CxgO+H6OF0Inu+oUrja2hry/d1JuxDljN+k08kGcPjFAu1j9imdmoK03rDM6tVsDvm9gq3IX5tiIE32SuEEl2aedjtemvlg83Yq2vhs5ST4ISqk4kD5tMlLNpbpbh2knunPnzhodR22E32PIcPPh0OMAL+d8MoRw/SnyyXVtS3zb7f3osBTsSzqM9lPkgzFjjOOiFIeBNENK4fD/YRz+D9BQRhK9TyJ3rUICfKBOyM1+v59StqXQtQ2vHQ3imLsUBHoW4zH1oWkpOby8ftxX7WFSxHLDdcmJLqlJOpZMXi+loE2tOdMlE/LacHMzvoAVSySe2gb6bSYMwp7WoK+FYHImGs9shfgXaG4YYWUyOtTRnt5VuDShM4MtTZrMagQ3YataQ377/DQZHOtITyqCAx2FVrGo34SD/jUElN6YcLFNgEvhgTe2tDuR+jwx0WEmHvWuh3PdcOorkZ60fXiJzSjd8X2NcOK3AMZwgthw3uD8D3QFZQhdxA/uztZanWDZos2GdGlECMIl24MIIT21nsPd0Q3m3VEslrlautWrYK3HOB3EYvszOJZBBzjNqUXAX4+H6qvwTFjwshJtQV9wIkaE/hwmOe4J+DtMXryIH7QFvPeasMWRMa5MXxK5YZ9xTodUNJ5+HAYYI2UquZwaL24lQqxrLB39/f2es0PZBOg3ajzjX5kaC5BUayGQ14QW5D01z5hrC8/xDuxY/qTRL6/J+SfHUwAntoCuO0GX2Gvti6VlREyFkUTmPszw75sw1chGW1qD3i+aOCPT5cVyzJ9FuJU05xp9inA6r7wMPM2Z8jmhVBoX1n5Tr1kXb+K3ILN9zsQZNedfDwe8D1hwABwdMbJUIt0J8mqrAP+jyA3diTA7Y8UXIOykKYWTscNYW0ag3dhq1/D89EHGpmn3xafBMwXPFXheDAd9N6Aula69fde4RH4bjAuUkEZD/Q4Zs52SjxWvZS2dQIyDdVd8Fsbs0/GY0LdId+1BpOpSmrbSixBnnxBu5QVkhGggEDjnyWbfLlCxExByMdL4HXZZCl+k+Q1unv9HuROsj2xycoL0mCFh18koBrNutRIE+6ZyNkZqW3c8tQ8jcHOZICnNuvbjK+8hNMsWTrzKU1jAjuXyfL8uG9mbWY5L6hcQppvNkdToxsdQ+7zQ6Bdu43Wk2aavqPg83er0ebp4K/4snHkZI/eIyA//2nKINpVMXL8bI9yD0aZdgRP3NnzUWTeeEyTkKOmkbYI/DJDIOTw0oWsx/Kt41t2HzwevA56KOcAxeaciLInnNO7SNuEctBxtxxEFnkpl/zBQ0Fn4neRfOAyj8DMNDzk6Ucnj9W4VWc+mqvyFQ++9en+qYc9wnr+/6n+q0Z2h9v/935zsDtH1jPnHM3zKbkRozMX0a8QExlO6DzgKHJ7q/PHsf5gVJMWiVyjZAAAAAElFTkSuQmCC" width="30" height="30">
+                    Github Profile
 			</a>
 			<a href = "https://in.linkedin.com/pub/sahil-babbar/7a/b83/976" class = "btn btn-default">
-				Linkedin Profile
+                <!-- Linkedin icon by Icons8 -->
+                <img class="icon icons8-Linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAABPhJREFUaAXdWltoHFUYPv+ZJL0gBgyIQfpkfAhVQU2T6GY3bHrZgm8KefIhvggWivji9aWP4oNIlQoF9ckKofgQES/JRjfZSxJDRdptUaEgti9WU/XBJt2d+f3P6AwzZ2f+s0NidscDy5z/cv7zffufOTcGRERZWF0dkFs4gYBZgSInQDxMbj0RrruhahKGbwnDEiAsO3ugfGRs7De9YwgqFiqVQ+DAi0LAk6SXQVsX1R0h8GOU+MaRTOYbD5dPZLG8dhDRvuQZ0vAEsB6YmhitK6zuv/7J+vp+FPZHaQAfxKgwK+w+kf2bjddpHD4YdEpFnTC72AksfFlaud+SeIXqVirAt4K0bQeGpWXhcykmoWhZFogTkobU8VaSKdMAFtTaMGSA3RCI6yjk11I6l9CRhwRgnto8RD9/1jPE+K/NQ4pIL9OLLRzn+OHJzGLA55yqF5dqJ4nG6YC+k9VeftEDcVYj4YM9nHvsbRJWfUWHKywRR4D778dhRAFds/awRITt/BFHQunpBdng7LtpY4lIgHEODApk7VzbnbaxROgvf21+fr0/qlO1N6OMPBNl64QOiss1NHR8jezv9Inm2Ww2e/OranXItuEkkZgh/Z2GtrtmboeIB6ZJQ+kGCBj0FN305IdWGGlPt5JQMJMQCdPaGUkN62sCYIkOS1epbhrmsb2qlZ0rn4GQr8Q5oHBeJdu0Z6ejW94S8qYnh5/OXkK58q/uJ0R838aeDwqToz97fl9UKndbKI8CYoEm96Okv8ezmZ4GIvj7VHbsu7ggC8u1X+ml98sebNRzudwNXxGozNbrfQMbfyrNuf59vTMjIyONgNmtFjKZX6jyofrNzs5adw0eOE3xT+h+UbJhaEEQZ0t72jq3PxTqdZsGztzUxPjTUST04NPT07bV3Hye9D/otijZQCSqSbzuljoZxBQFrA+aMwDQNvl8Pt+kYfZsTMiQmiVCXcYCU1GQ7otC0QyCWocMLi3mqdzjJerm0xaDpjC8I5q3QbSYjOhN50u1Yehx7ti4fv2CypZuD8kIb5H8REinCWxGNN9WUZ0vE5bFpWqhWF4pSSkugyPXBgYPfF8sVXJcmHJxXJ2H2A0qSwRpBeQ60G3WLcn603boJQT4nMZkEPh9AuRctVrdp8fz5FOn6NpQiDVPjnqyRKIaBHU0ZyXLCIqngu39Ooj+TcddN3yVXqGO/PVGtynZQISffvWAW9YmmxHK7716G0+mP+URrx71pMFB6218MRCJb6gskGQd+SdU/IYT+J00seDuFkwZUUOz/SIl/45QpNh4iYepBmtbGRF0Ja7F65jIEqEFL/YfjEJsmTMS1WxHdCwRYw8ywV7LGGx7DiwRykeijMgt4zuyPbRMa5YI0841bfcFNcVPYjcRSZSR22l9R4hlOmYtmvYTZURatxP5Jxk6Jl/T0OLb08Gbd9g9K0sE3U1n+2DoirWjGWm5BGgXOsquWdkb6qbxMgEfjgZPd00o56JtpFVfRgjxqGendLxHZxj3qsTThZ4oXgjJYeECrVqlsCogIR6jDg8GNMHqFSiWa2/S3MN1EGzQnXU6Cku6kH6X0PFn5u6E76GybRRn5LHJ8R8ppWc8beqehF1xcGetv/b2vkxkLqaQxEUXOwH3p8v/xUc1KhPqKxuUzijtOs6TyJ6PlX8HC2HD8wqr92WQwuJnJAgsjR+e/Q2V/nbRLsjsNgAAAABJRU5ErkJggg==" width="30" height="30">
+                Linkedin Profile
 			</a>
 		</div>
+        <p style = "margin-top: 30%;">
+        </p>
+        <div class = "container">
+            <div class = "footer">
+                <hr>
+                Copyright 2015, All rights reserved.
+            </div>
+        </div>
 	</body>
 </html>
