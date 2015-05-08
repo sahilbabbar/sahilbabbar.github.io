@@ -278,7 +278,7 @@ th {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 20px;
+  font-size: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -363,7 +363,7 @@ th {
 }
 .glyphicon-home:before {
   content: "\e021";
-}   
+}
 .glyphicon-file:before {
   content: "\e022";
 }

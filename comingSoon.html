@@ -13,50 +13,58 @@
     <body>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-<!--        Navbar begins-->
-    <div class = "container">
-        <div class="btn-group btn-group-justified" role="group">
-            <div class="btn-group" role="group">
-                <a href = "index.html">
-                    <button type="button" class="btn btn-default">
-                        Home
-                    </button>
-                </a>
+    <!--        Navbar begins-->
+            <div class = "container">
+                <div class="btn-group btn-group-justified" role="group">
+                    <div class="btn-group" role="group">
+                        <a href = "index.html">
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Home" style = "color: #1AB8EC;">
+                                <span class = "glyphicon glyphicon-home"></span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a href = "https://in.linkedin.com/pub/sahil-babbar/7a/b83/976">
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="My Profile" style = "color: #1AB8EC;">
+                                <span class = "glyphicon glyphicon-question-sign"></span>
+                            </button>
+                        </a>
+                    </div>
+                      <div class="btn-group" role="group">
+                        <a href = "comingSoon.html">
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="My Blog" style = "color: #1AB8EC;">
+                                <span class = "glyphicon glyphicon-flag"></span>
+                            </button>
+                          </a>
+                      </div>
+                      <div class="btn-group" role="group">
+                          <a href = "contact.html">
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Reach Me" style = "color: #1AB8EC;">
+                                <span class = "glyphicon glyphicon-envelope"></span>
+                            </button>
+                          </a>
+                      </div>
+                </div>
             </div>
-            <div class="btn-group" role="group">
-                <a href = "https://in.linkedin.com/pub/sahil-babbar/7a/b83/976">
-                    <button type="button" class="btn btn-default">
-                        Profile
-                    </button>
-                </a>
-            </div>
-              <div class="btn-group" role="group">
-                <a href = "comingSoon.html">
-                    <button type="button" class="btn btn-default">
-                        Blog
-                    </button>
-                  </a>
-              </div>
-              <div class="btn-group" role="group">
-                  <a href = "contact.html">
-                    <button type="button" class="btn btn-default">
-                        Contact Me
-                    </button>
-                  </a>
-              </div>
+    <!--        Navbar ends-->
+        <div class = "container">
+            <h2 class = "align-center margin-top-5">Beginning Awesomeness Soon!</h2>
         </div>
-    </div>
-<!--        Navbar ends-->
-    <div class = "container">
-        <h2 class = "align-center margin-top-5">Beginning Awesomeness Soon!</h2>
-    </div>
-    <p style = "margin-top: 30%;"></p>
+        <p style = "margin-top: 30%;"></p>
 
-    <div class = "container">
-        <div class = "footer">
-            <hr>
-            Copyright 2015, All rights reserved.
+        <div class = "container">
+            <div class = "footer">
+                <hr>
+                Copyright 2015, All rights reserved.
+            </div>
         </div>
-    </div>
+        <!-- JS Files -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src = "js/bootstrap.js"></script>
     </body>
+    <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
 </html>

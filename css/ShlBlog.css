@@ -9,7 +9,7 @@
     color: rgb(71,72,75);
 }
 .ShlJumbotron h2:hover {
-    color: black;
+    color: #51b3c2;
 }
 .ShlJumbotron h3 {
     text-decoration: none;
@@ -17,7 +17,7 @@
     font-size: 18px;
 }
 .ShlJumbotron h3:hover {
-    color: black;
+    color: #51b3c2;
 }
 .ShlJumbotron a {
 	text-decoration: none;
