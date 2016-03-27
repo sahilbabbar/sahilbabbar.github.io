@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SB | Code Stylesheet</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/bootstrap-theme.min.css" rel = "stylesheet">
+        <link href = "css/bootstrap-material-design.min.css" rel = "stylesheet">
+        <link href = "css/material-fullpalette.min.css" rel="stylesheet" >
+        <link href = "css/ripples.min.css" rel = "stylesheet">
+        <link href = "css/codeStyle.css" rel = "stylesheet">
+        <link href = "css/prism.css" rel = "stylesheet">
+        <link href = 'http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class = "navbar navbar-material-blue-grey shlReusable-marginBottom-0">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-inverse-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Code Notes<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tutorialGulp.html">Getting Started with Gulp</a></li>
+                            </ul>
+                        </li>
+                        <li class = "active"><a href = "codeStyle.html">Code Stylesheet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class = "breadcrumb" style = "margin-bottom: 5px;">
+            <li><a href = "index.html">Home</a></li>
+            <li class = "active">Code Stylesheet</li>
+        </ul>
+        <div class = "container">
+            <h1 class = "shlReusable-font-cursive shlReusable-marginBottom-2">Code Stylesheet</h1>
+            <p class = "lead">
+                Assumption: Project is based on HTML5, CSS3, JavaScript inside Angular-Bootstrap Framework.
+            </p>
+            <ul class="nav nav-pills nav-justified shlReusable-marginBottom-2 shlReusable-navPills-border">
+                <li><a data-toggle ="tab" href = "#html">HTML</a></li>
+                <li><a data-toggle = "tab" href = "#css">CSS</a></li>
+                <li><a data-toggle = "tab" href = "#js">JS</a></li>
+                <li class = "active"><a data-toggle = "tab" href = "#editor">Project Configuration</a></li>
+            </ul>
+            <div class = "tab-content">
+                <div id = "html" class = "tab-pane fade">
+                    <p class = "lead">0. Boilerplate Code</p>
+                    <pre class = "line-numbers"><code class = "language-html">
+                        <html></html>
+                    </code></pre>
+                </div>
+                <div id = "css" class = "tab-pane fade">
+                    <p class = "lead">0. Style Naming</p>
+                    <p class = "shlReusable-fontSize-18">
+
+                    </p>
+                    <pre class = "line-numbers"><code class = "language-css">
+
+                    </code></pre>
+                    <p class = "lead">1. Declaration Order</p>
+                    <p class = "shlReusable-fontSize-18">
+                        Define all the styles in alphabetical order so that its quick and easy to find code of other team developers and it
+                        acts as a definite place to add new styles.
+                    </p>
+                    <pre class = "line-numbers"><code class = "language-css">
+
+                    </code></pre>
+                </div>
+                <div id = "js" class = "tab-pane fade">
+                    <h1>Olalaah! JS</h1>
+                </div>
+                <div id = "editor" class = "tab-pane fade in active">
+                    <p class = "lead">0. Directory Structure</p>
+                    <p class = "shlReusable-fontSize-18">
+                        All folder names should be in simple-lowercase alphabets without camelcase or hyphenation words.
+                    </p>
+                    <pre class = "line-numbers"><code class = "language-markup">
+                        root
+                          |-styles
+                          |   |-lib
+                          |   |  |-css
+                          |   |  |  |-CSS FRAMEWORK CSS FILES
+                          |   |  |-fonts
+                          |   |     |-CSS FRAMEWORK FONT FILES
+                          |   |-dev
+                          |      |-css
+                          |         |-DEVELOPER DEFINED CSS FILES
+                          |-scripts
+                          |   |-lib
+                          |   |  |-js
+                          |   |     |-JS FRAMEWORK FILES
+                          |   |-dev
+                          |      |-controllers
+                          |      |     |-DEVELOPER DEFINED JS FILES
+                          |      |-services
+                          |      |     |-DEVELOPER DEFINED JS FILES
+                          |      |-directives
+                          |            |-DEVELOPER DEFINED JS FILES
+                          |-pages
+                              |-USER DEFINED HTML PAGES
+                    </code></pre>
+                    <div class = "shlReusable-marginTop-2">
+                        <p class = "lead">0.1. Files</p>
+                        <p class = "shlReusable-fontSize-18">
+                            <ul>
+                                <li class = "shlReusable-fontSize-18">
+                                    Naming convention for HTML, CSS and JS files should be in <code>CamelCase</code>, for example, <code>FileOne.html</code>
+                                    and not <code>fileOne.html</code>
+                                </li>
+                                <li class = "shlReusable-fontSize-18">
+                                    Every HTML page should have its own CSS file, for example, <code>FileOne.html</code> should have <code>FileOne.css</code>
+                                    and similarly, for other pages. Although, when styles start to overlap among different pages
+                                    then, one <code>reusableStyles.css</code> file should be created and those styles should be added to it.
+                                </li>
+                            </ul>
+
+                        </p>
+                    </div>
+                    <div class = "shlReusable-marginTop-2">
+                        <p class = "lead">2. Editor Configuration</p>
+                        <p class = "shlReusable-fontSize-18">
+                            Best way to ensure that every team member's code looks alike, in terms of indentation, code-markup, styles, etc;
+                            is to use a editor configuration tool like <strong><a href = "//www.editorconfig.org" target = "_blank">EditorConfig</a></strong>.
+                            Following is a sample <code>.editorconfig</code> file that can be used for most of the HTML, CSS, JS projects.
+                        </p>
+                        <pre class = "line-numbers"><code class = "language-markup">
+                            root = true
+                            [*]
+                            charset = utf-8
+                            indent_style = space
+                            indent_size = 4
+                            trim_trailing_whitespace = true
+                            end_of_line = lf
+                            insert_final_newline = true
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="js/jquery/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/prism.js"></script>
+    </body>
+</html>
