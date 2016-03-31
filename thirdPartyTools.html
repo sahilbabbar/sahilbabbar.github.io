@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SB | Third Party Tools Guide</title>
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/bootstrap-theme.min.css" rel = "stylesheet">
+        <link href = "css/bootstrap-material-design.min.css" rel = "stylesheet">
+        <link href = "css/material-fullpalette.min.css" rel="stylesheet" >
+        <link href = "css/ripples.min.css" rel = "stylesheet">
+        <link href = "css/codeStyle.css" rel = "stylesheet">
+        <link href = "css/prism.css" rel = "stylesheet">
+        <link href = 'http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+        <link href = 'https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+        <link href = "img/img-8.png" rel = "icon" type = "image/png">
+    </head>
+    <body>
+        <div class = "navbar navbar-material-blue-grey shlReusable-marginBottom-0">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-inverse-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <!--<li class="dropdown">-->
+                        <!--<a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Code Notes<b class="caret"></b></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="tutorialGulp.html">Getting Started with Gulp</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                        <li><a href = "codeStyle.html">Code Stylesheet</a></li>
+                        <li class = "active"><a href = "thirdPartyTools.html">Third Party Tools Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class = "breadcrumb" style = "margin-bottom: 5px;">
+            <li><a href = "index.html">Home</a></li>
+            <li class = "active">Third Party Tools Guide</li>
+        </ul>
+        <div class = "container">
+            <h1 class = "shlReusable-font-cursive shlReusable-marginBottom-2">Third Party Tools Guide</h1>
+            <p class = "lead">
+                Below is the list of Third Party Tools, also called 3PPs, that are most apt for frontend development among thousands available.
+            </p>
+            <ul class="nav nav-pills nav-justified shlReusable-marginBottom-2 shlReusable-navPills-border">
+                <li class = "active"><a data-toggle ="tab" href = "#bootstrap">Bootstrap</a></li>
+                <li><a data-toggle = "tab" href = "#angularUi-bootstrap">Angular UI - Bootstrap</a></li>
+                <li><a data-toggle = "tab" href = "#angular-material">Angular Material</a></li>
+            </ul>
+            <div class = "tab-content">
+                <div id = "bootstrap" class = "tab-pane fade in active">
+                    <p class = "lead">0. Alert Dialogs</p>
+                    <div class = "shlReusable-fontSize-18">
+                        <ol>
+                            <li>
+                                Vex <span class = "label label-success">Preferred</span>
+                                <ul>
+                                    <li>
+                                        <a href = "//www.github.hubspot.com/vex/docs/welcome/">Website</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.github.com/hubspot/vex">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.github.hubspot.com/vex/">GitHub Repository</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Bootstrap Sweet Alert
+                                <ul>
+                                    <li>
+                                        <a href = "//www.lipis.github.io/bootstrap-sweetalert/">Website</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.github.com/lipis/bootstrap-sweetalert#sweetalert-for-bootstrap">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.github.com/lipis/bootstrap-sweetalert">GitHub Repository</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div id = "angularUi-bootstrap" class = "tab-pane fade">
+                    <p class = "lead">0. Alert Dialogs</p>
+                    <div class = "shlReusable-fontSize-18">
+                        <ol>
+                            <li>
+                                Bootstrap Sweet Alert <span class = "label label-success">Preferred</span>
+                                <ul>
+                                    <li>
+                                        <a href = "//www.lipis.github.io/bootstrap-sweetalert/">Website</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.github.com/lipis/bootstrap-sweetalert#sweetalert-for-bootstrap">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.github.com/lipis/bootstrap-sweetalert">GitHub Repository</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Alertify.org
+                                <ul>
+                                    <li>
+                                        <a href = "//www.alertifyjs.org/">Website</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.alertifyjs.org/#getting-started">Documentation</a>
+                                    </li>
+                                    <li>
+                                        <a href = "//www.github.com/alertifyjs/alertify.js">GitHub Repository</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JS Files -->
+        <script src="js/jquery/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src = "js/material.min.js"></script>
+        <script src = "js/ripples.min.js"></script>
+    </body>
+</html>
