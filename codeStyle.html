@@ -48,14 +48,15 @@
         </ul>
         <div class = "container">
             <h1 class = "shlReusable-font-cursive shlReusable-marginBottom-2">Code Stylesheet</h1>
-            <p class = "lead">
-                Assumption: Project is based on HTML5, CSS3, JavaScript beneath Angular-Bootstrap Framework.
+            <p>
+                <strong>Assumption</strong>: Project is based on HTML5, CSS3, JavaScript beneath Angular-Bootstrap Framework.<br>
+                <strong>Note</strong>: This documentation follows <code>camelCase</code> convention and not <code>CamelCase</code> or any other.
             </p>
             <ul class="nav nav-pills nav-justified shlReusable-marginBottom-2 shlReusable-navPills-border">
                 <li><a data-toggle ="tab" href = "#html">HTML</a></li>
-                <li><a data-toggle = "tab" href = "#css">CSS</a></li>
+                <li class = "active"><a data-toggle = "tab" href = "#css">CSS</a></li>
                 <li><a data-toggle = "tab" href = "#js">JS</a></li>
-                <li class = "active"><a data-toggle = "tab" href = "#editor">Project Configuration</a></li>
+                <li><a data-toggle = "tab" href = "#editor">Project Configuration</a></li>
             </ul>
             <div class = "tab-content">
                 <div id = "html" class = "tab-pane fade">
@@ -64,15 +65,53 @@
                         <html></html>
                     </code></pre>
                 </div>
-                <div id = "css" class = "tab-pane fade">
-                    <p class = "lead">0. Style Naming</p>
+                <div id = "css" class = "tab-pane fade in active">
+                    <p class = "lead">0. Syntax</p>
+                    <ol class = "shlReusable-fontSize-18">
+                        <li>
+                            <u>Prefixes</u> are used to differentiate between styles belonging to different entities. Following prefixes
+                            are defined:
+                            <ul>
+                                <li>
+                                    <strong>rs</strong>: In-house code
+                                </li>
+                                <mark><strong>Syntax: "rs" + ProjectName + <i>remaining style</i></strong></mark><br>
+                            </ul>
+                        </li>
+                        <li>
+                            <u>Child Elements</u>: are contained in various entities. For example, an ordered list has list item(s), therefore
+                            the following style forms according to the naming convention:
+                            <pre class = "line-numbers"><code class = "language-css">
+                                .rsPm-orderedList-listItem     //Project name is Preacher Management
+                                .rsPm-orderedList-listItemIcon
+                                .rsPm-orderedList-greenItem
+                            </code></pre>
+                        </li>
+                        <li>
+                            <u>Modifiers</u>:
+                        </li>
+                        <li>
+                            <u>Style Examples</u>
+                            <ul>
+                                <li>
+                                    For example, the application name is Preacher Management and we want to give top margin 5%:
+                                    <pre class = "line-numbers"><code class = "language-css">
+                                        .rsPm-topMargin_5
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <hr>
+                    <p class = "lead">1. Declaration Order</p>
                     <p class = "shlReusable-fontSize-18">
-
+                        Define all the styles in alphabetical order so that its quick and easy to find code of other team developers and it
+                        acts as a definite place to add new styles.
                     </p>
                     <pre class = "line-numbers"><code class = "language-css">
 
                     </code></pre>
-                    <p class = "lead">1. Declaration Order</p>
+                    <p class = "lead">2. Tips</p>
                     <p class = "shlReusable-fontSize-18">
                         Define all the styles in alphabetical order so that its quick and easy to find code of other team developers and it
                         acts as a definite place to add new styles.
@@ -84,7 +123,7 @@
                 <div id = "js" class = "tab-pane fade">
                     <h1>Olalaah! JS</h1>
                 </div>
-                <div id = "editor" class = "tab-pane fade in active">
+                <div id = "editor" class = "tab-pane fade">
                     <p class = "lead">0. Directory Structure</p>
                     <p class = "shlReusable-fontSize-18">
                         All folder names should be in simple-lowercase alphabets without camelcase or hyphenation words.
