@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+json+julia+keyman+kotlin+latex+less+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+puppet+pure+python+q+qore+r+jsx+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+verilog+vhdl+vim+wiki+yaml&plugins=line-highlight+line-numbers+file-highlight+show-language+jsonp-highlight+highlight-keywords+remove-initial-line-feed+previewer-base+previewer-color+previewer-gradient+previewer-easing+previewer-time+previewer-angle+autoloader+unescaped-markup+command-line+normalize-whitespace+keep-markup */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+json+julia+keyman+kotlin+latex+less+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+puppet+pure+python+q+qore+r+jsx+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+verilog+vhdl+vim+wiki+yaml&plugins=line-highlight+line-numbers+autolinker+wpd+file-highlight+show-language+jsonp-highlight+highlight-keywords+remove-initial-line-feed+previewer-base+previewer-color+previewer-gradient+previewer-easing+autoloader+unescaped-markup+command-line+normalize-whitespace+keep-markup */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -323,6 +323,20 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
+.token a {
+	color: inherit;
+}
+code[class*="language-"] a[href],
+pre[class*="language-"] a[href] {
+	cursor: help;
+	text-decoration: none;
+}
+
+code[class*="language-"] a[href]:hover,
+pre[class*="language-"] a[href]:hover {
+	cursor: help;
+	text-decoration: underline;
+}
 div.prism-show-language {
 	position: relative;
 }
@@ -494,128 +508,6 @@ div.prism-show-language > div.prism-show-language-label {
 	stroke: white;
 	stroke-opacity: 0.5;
 	stroke-width: 2;
-}
-@-webkit-keyframes prism-previewer-time {
-	0% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: 0;
-	}
-	50% {
-		stroke-dasharray: 100, 500;
-		stroke-dashoffset: 0;
-	}
-	100% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: -100;
-	}
-}
-
-@-o-keyframes prism-previewer-time {
-	0% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: 0;
-	}
-	50% {
-		stroke-dasharray: 100, 500;
-		stroke-dashoffset: 0;
-	}
-	100% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: -100;
-	}
-}
-
-@-moz-keyframes prism-previewer-time {
-	0% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: 0;
-	}
-	50% {
-		stroke-dasharray: 100, 500;
-		stroke-dashoffset: 0;
-	}
-	100% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: -100;
-	}
-}
-
-@keyframes prism-previewer-time {
-	0% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: 0;
-	}
-	50% {
-		stroke-dasharray: 100, 500;
-		stroke-dashoffset: 0;
-	}
-	100% {
-		stroke-dasharray: 0, 500;
-		stroke-dashoffset: -100;
-	}
-}
-
-.prism-previewer-time:before {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	background: #fff;
-}
-.prism-previewer-time:after {
-	margin-top: 4px;
-}
-.prism-previewer-time svg {
-	width: 32px;
-	height: 32px;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-}
-.prism-previewer-time circle {
-	fill: transparent;
-	stroke: hsl(200, 10%, 20%);
-	stroke-opacity: 0.9;
-	stroke-width: 32;
-	stroke-dasharray: 0, 500;
-	stroke-dashoffset: 0;
-	-webkit-animation: prism-previewer-time linear infinite 3s;
-	-moz-animation: prism-previewer-time linear infinite 3s;
-	-o-animation: prism-previewer-time linear infinite 3s;
-	animation: prism-previewer-time linear infinite 3s;
-}
-.prism-previewer-angle:before {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	background: #fff;
-}
-.prism-previewer-angle:after {
-	margin-top: 4px;
-}
-.prism-previewer-angle svg {
-	width: 32px;
-	height: 32px;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-}
-.prism-previewer-angle[data-negative] svg {
-	-webkit-transform: scaleX(-1) rotate(-90deg);
-	-moz-transform: scaleX(-1) rotate(-90deg);
-	-ms-transform: scaleX(-1) rotate(-90deg);
-	-o-transform: scaleX(-1) rotate(-90deg);
-	transform: scaleX(-1) rotate(-90deg);
-}
-.prism-previewer-angle circle {
-	fill: transparent;
-	stroke: hsl(200, 10%, 20%);
-	stroke-opacity: 0.9;
-	stroke-width: 32;
-	stroke-dasharray: 0, 500;
 }
 /* Fallback, in case JS does not run, to ensure the code is at least visible */
 .lang-markup script[type='text/plain'],

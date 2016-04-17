@@ -62,10 +62,11 @@
                 <div id = "html" class = "tab-pane fade">
                     <p class = "lead">0. Boilerplate Code</p>
                     <pre class = "line-numbers"><code class = "language-html">
-                        <html></html>
+                        <h1>It's working!</h1>
                     </code></pre>
                 </div>
                 <div id = "css" class = "tab-pane fade in active">
+                    <p>Assumption: Project name is Preacher Management so the below code has <code>Pm</code> as prefix.</p>
                     <p class = "lead">0. Syntax</p>
                     <ol class = "shlReusable-fontSize-18">
                         <li>
@@ -82,39 +83,78 @@
                             <u>Child Elements</u>: are contained in various entities. For example, an ordered list has list item(s), therefore
                             the following style forms according to the naming convention:
                             <pre class = "line-numbers"><code class = "language-css">
-                                .rsPm-orderedList-listItem     //Project name is Preacher Management
-                                .rsPm-orderedList-listItemIcon
-                                .rsPm-orderedList-greenItem
+                                .rsPm-orderedList-listItem {}
+                                .rsPm-orderedList-listItemIcon {}
+                                .rsPm-orderedList-compact {}
                             </code></pre>
                         </li>
                         <li>
-                            <u>Modifiers</u>:
+                            <u>Modifiers</u>: are used to describe the state of an entity or resource. For example, a button can have a disabled
+                            state or a hover state and can change the colors depending on state change. Modifiers are used in places where the state of an element
+                            is being changed, dynamically.Modifiers are defined using the convention <code>_key_value</code> and the value part can be optional.
+                            Therefore, the above button example, can be depicted as:
+                            <pre class = "line-numbers"><code class = "language-css">
+                                .eaPm-button_opacity_90 {}
+                            </code></pre>
                         </li>
                         <li>
-                            <u>Style Examples</u>
-                            <ul>
-                                <li>
-                                    For example, the application name is Preacher Management and we want to give top margin 5%:
-                                    <pre class = "line-numbers"><code class = "language-css">
-                                        .rsPm-topMargin_5
-                                    </code></pre>
-                                </li>
-                            </ul>
+                            <u>Style Examples</u>: For example, we want to give top margin 5% to certain element:
+                            <pre class = "line-numbers"><code class = "language-css">
+                                .rsPm-topMargin-5 {}
+                                .rsPm-button_backgroundColor_lightBlue {}
+                            </code></pre>
                         </li>
                     </ol>
                     <hr>
                     <p class = "lead">1. Declaration Order</p>
                     <p class = "shlReusable-fontSize-18">
-                        Define all the styles in alphabetical order so that its quick and easy to find code of other team developers and it
-                        acts as a definite place to add new styles.
+                        Define all the styles in alphabetical order, with appropriate comments, so that its quick and easy to find code of other
+                        team developers and it acts as a definite place to add new styles.
                     </p>
                     <pre class = "line-numbers"><code class = "language-css">
-
+                        /* ALIGNMENT STYLES */
+                        .rsPm-button-centerAlign {
+                            text-align: center;
+                        }
+                        /* BACKGROUND STYLES */
+                        .rsPm-jumbotron-cyanBackground {
+                            background-color: #00FFFF;
+                        }
+                        /* CAROUSEL STYLES */
+                        .rsPm-carousel_slidingEffect_fast {
+                            ...
+                        }
                     </code></pre>
                     <p class = "lead">2. Tips</p>
                     <p class = "shlReusable-fontSize-18">
-                        Define all the styles in alphabetical order so that its quick and easy to find code of other team developers and it
-                        acts as a definite place to add new styles.
+                        <ol class = "shlReusable-fontSize-18">
+                            <li>
+                                Use <code>link</code> instead of <code>@import</code>.
+                                <pre class = "line-numbers"><code class = "language-css">
+                                    <!-- Use -->
+                                    <link rel = "stylesheet" href = "homepage.css">
+                                    <!-- Don't use -->
+                                    <style>
+                                        @import url("pageTwo.css");
+                                    </style>
+                                </code></pre>
+                            </li>
+                            <li>
+                                Media queries should be added along with CSS rules in their declaration order, to keep all the code related
+                                to that section in one place.
+                            </li>
+                            <li>
+                                Single declarations should be declared one per line like multiple declarations.
+                                <pre class = "line-numbers"><code class = "language-css">
+                                    /* Use */
+                                    .rsPm-button_color_white {
+                                        color: white;
+                                    }
+                                    /* Don't Use */
+                                    .rsPm-textColor-red { color: red; }
+                                </code></pre>
+                            </li>
+                        </ol>
                     </p>
                     <pre class = "line-numbers"><code class = "language-css">
 
