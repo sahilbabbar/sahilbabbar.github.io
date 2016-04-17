@@ -125,6 +125,7 @@
                             ...
                         }
                     </code></pre>
+                    <hr>
                     <p class = "lead">2. Tips</p>
                     <p class = "shlReusable-fontSize-18">
                         <ol class = "shlReusable-fontSize-18">
@@ -154,11 +155,54 @@
                                     .rsPm-textColor-red { color: red; }
                                 </code></pre>
                             </li>
+                            <li>
+                                Don't cut down the code by using shorthand notations.
+                                <pre class = "line-numbers"><code class = "language-css">
+                                    /* Use */
+                                    .rsPm-jumbotronMargin {
+                                        margin-left: 1%;
+                                        margin-right: 1%;
+                                    }
+                                    /* Don't Use */
+                                    .rsPm-jumbotronMargin {
+                                        margin: 1% 1% 0 0;
+                                    }
+                                </code></pre>
+                            </li>
+                            <li>
+                                Don't nest the code and use seperate lines for it.
+                            </li>
+                            <li>
+                                Comments are the soul of any piece of code. Ensure that appropriate comments are provided in declaration order
+                                and anywhere else required, <strong>in capital letters</strong> so that they can be differentiated from the
+                                rest of the code. Long comments are appreciated instead of short ones. Following example depicts the desired behaviour.
+                                <pre class = "line-numbers"><code class = "language-css">
+                                    /* ALIGNMENT STYLES */
+                                    .rsPm-signUpForm {
+                                        /* GIVING ALIGNMENT TO THE FORM WRT TO BACKGROUND IMAGE AND OTHER ELEMENTS ON THE PAGE.*/
+                                        ...
+                                    }
+                                </code></pre>
+                            </li>
+                            <li>
+                                Class names can be long like <code>rsPm-paginationButton_hover_color</code> as they provide easy debugging and
+                                improves readability of the code. Avoid using short class names.
+                                <pre class = "line-numbers"><code class = "language-css">
+                                    /* Use */
+                                    .rsPm-paginationButton_hover_lightColor {}
+                                    .rsPm-textAlign-center {}
+                                    .rsPm-formButton-textAlign-center {}
+                                    /* Don't Use */
+                                    .rsPm-pagination {}
+                                    .rsPm-textCenter {}
+                                    .rsPm-buttonCenter {}
+                                </code></pre>
+                            </li>
+                            <li>
+                                Use class names instead of tag names while defining styles as the browser performance is known to be affected by this.
+                            </li>
                         </ol>
                     </p>
-                    <pre class = "line-numbers"><code class = "language-css">
-
-                    </code></pre>
                 </div>
                 <div id = "js" class = "tab-pane fade">
                     <h1>Olalaah! JS</h1>
@@ -235,6 +279,13 @@
                 </div>
             </div>
         </div>
+        <footer class = "shlBlog-footer">
+            <div class = "container">
+                <p class = "text-muted text-center">
+                    Inspired from <a href = "http://codeguide.co/" target = "_blank">@mdo</a>, <a href = "https://google.github.io/styleguide/htmlcssguide.xml" target = "_blank">Google</a> and <a href = "http://primercss.io/guidelines/#css-specificity-guidelines" target = "_blank">GitHub</a>.
+                </p>
+            </div>
+        </footer>
         <!-- Scripts -->
         <script src="js/jquery/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

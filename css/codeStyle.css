@@ -21,6 +21,10 @@ body {
 .shlReusable-marginTop-2 {
     margin-top: 2%;
 }
+.shlBlog-footer {
+    background-color: #eeeeee;
+    padding: 1%;
+}
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #000;
     background: none;
