@@ -7,6 +7,10 @@
     <link rel = "stylesheet" href = "css/lib/mobile-angular-ui-hover.min.css" />
     <link rel = "stylesheet" href = "css/lib/mobile-angular-ui-base.min.css" />
     <link rel = "stylesheet" href = "css/lib/mobile-angular-ui-desktop.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
+    <script src = "js/lib/mobile-angular-ui.min.js"></script>
+    <script src = "js/lib/mobile-angular-ui.gestures.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <!-- Developer Stylesheet(s) -->
     <link rel = "stylesheet" href = "css/dev/index.css" />
@@ -23,7 +27,9 @@
         <!-- App Body Begins -->
         <div class = "app-body">
             <div class = "app-content">
+
                 <ng-view class = "shlIndex-r-backgroundWhite shlIndex-r-standardFont">
+                    <legend>Login</legend>
                     <div class = "container">
                         <h1 class = "text-center shlIndex-r-standardFont shlIndex-r-marginTop2">Log In</h1>
                         <form>
@@ -44,10 +50,7 @@
         <!-- App Body Ends -->
     </div>
     <!-- Library Script(s) -->
-    <script src = "js/lib/angular.min.js"></script>
-    <script src = "js/lib/angular-route.min.js"></script>
-    <script src = "js/lib/mobile-angular-ui.min.js"></script>
-    <script src = "js/lib/mobile-angular-ui.gestures.min.js"></script>
+
     <!-- Developer Script(s) -->
     <script src = "js/dev/app.js"></script>
     <script src = "js/dev/controllers/AppController.js"></script>
