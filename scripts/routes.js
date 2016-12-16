@@ -3,7 +3,7 @@
     angular.module('shlApp').config(function($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'templates/index.html'
+                templateUrl: 'templates/home.html'
             })
             .when('/about', {
                 templateUrl: 'templates/about.html'
