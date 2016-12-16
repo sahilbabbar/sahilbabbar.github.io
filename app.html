@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = 'en' ng-app = 'shlApp'>
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
+        <meta name = 'viewport' content = 'width = device-width, initial-scale = 1'>
+        <title>Sahil Babbar</title>
+        <!--Lib Styles-->
+        <link rel = 'stylesheet' href = 'node_modules/bootstrap/dist/css/bootstrap.min.css'>
+        <link rel = 'stylesheet' href = 'node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css'>
+        <link rel = 'stylesheet' href = 'styles/lib/material-fullpalette.min.css'>
+        <link rel = 'stylesheet' href = 'node_modules/bootstrap-material-design/dist/css/ripples.min.css'>
+        <link rel = 'stylesheet' href = 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic'>
+        <link rel = 'stylesheet' href = 'https://fonts.googleapis.com/css?family=Parisienne'>
+        <link rel = 'stylesheet' href = 'https://fonts.googleapis.com/icon?family=Material+Icons'>
+        <!--Dev Styles-->
+        <link rel = 'stylesheet' href = 'styles/dev/index.css'>
+        <link rel = 'stylesheet' href = 'styles/dev/about.css'>
+        <link rel = 'stylesheet' href = 'styles/dev/reusable.css'>
+    </head>
+    <body ng-cloak>
+        <header></header>
+        <div ng-view>
+
+        </div>
+        <footer></footer>
+        <!--Lib Scripts-->
+        <script src = 'node_modules/jquery/dist/jquery.min.js'></script>
+        <script src = 'node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+        <script src = 'node_modules/bootstrap-material-design/dist/js/material.min.js'></script>
+        <script src = 'node_modules/bootstrap-material-design/dist/js/ripples.min.js'></script>
+        <script src = 'node_modules/angular/angular.min.js'></script>
+        <script src = 'node_modules/angular-route/angular-route.min.js'></script>
+        <!--Dev Scripts-->
+        <script src = 'scripts/app.js'></script>
+        <script src = 'scripts/routes.js'></script>
+        <script src = 'scripts/controllers.js'></script>
+        <script src = 'scripts/directives.js'></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+                $.material.init();
+            });
+        </script>
+    </body>
+</html>
