@@ -23,6 +23,7 @@
   "dependencies": {
     "angular": "^1.5.9",
     "angular-route": "^1.5.9",
+    "bootstrap-material-design": "^0.5.10",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
