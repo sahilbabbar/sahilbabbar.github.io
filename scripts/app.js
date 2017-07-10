@@ -1,5 +1,5 @@
 "use strict";
 (function() {
-    angular.module('shlApp', ['ngRoute']);
+    var app = angular.module('meApp', ['ngMaterial']);
 })();
 
