@@ -1,11 +1,11 @@
 'use strict';
 (function() {
     var app = angular.module('meApp');
-    app.config(function($stateProvider) {
-        var homeState = {
-            name: 'home',
+    app.config(function($stateProvider, $urlRouterProvider) {
+        var aboutState = {
+            name: 'about',
             url: '/',
-            templateUrl: 'templates/home.html'
+            templateUrl: 'templates/about.html'
         };
         var blogState = {
             name: 'blog',
@@ -17,8 +17,9 @@
             url: '/introToJs',
             templateUrl: 'blog/introToJs.html'
         };
-        $stateProvider.state(homeState);
+        $stateProvider.state(aboutState);
         $stateProvider.state(blogState);
         $stateProvider.state(introToJsState);
+        $urlRouterProvider.otherwise('/');
     });
 })();
