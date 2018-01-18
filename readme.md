@@ -3,14 +3,10 @@
 1. AngularJS
 2. AngularJS Material
 
-------------------------
-
 ## Libraries/Tools Used
 
 1. NPM
 2. Icons8 & Flaticons 
-
-------------------------
 
 ## Steps 
 
@@ -23,8 +19,6 @@
 4. Open Google Chrome in disabled security mode.
 
 5. Double click on `index.html` file to open in Google Chrome.
-
-------------------------
 
 ## Note(s)
 
