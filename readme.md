@@ -23,5 +23,3 @@
 ## Note(s)
 
 1. Console will show errors due to embeded without YouTube's API key.
-
-------------------------
