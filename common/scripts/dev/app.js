@@ -1,4 +1,4 @@
 (function() {
     'use strict';
-    var app = angular.module('edApp', ['ngMaterial', 'ui.router']);
+    var app = angular.module('edApp', ['ngMaterial']);
 })();
